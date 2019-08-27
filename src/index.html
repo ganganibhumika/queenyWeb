@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>QueenyWeb</title>
@@ -7,8 +8,215 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <!-- Font Awesome CSS File -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
+
 <body>
-  <app-root></app-root>
+  <div class="page-wrapper">
+    <app-root></app-root>
+  </div>
+  <div class="mobile-menu-overlay"></div>
+  <!-- End .mobil-menu-overlay -->
+
+  <div class="mobile-menu-container">
+    <div class="mobile-menu-wrapper">
+      <span class="mobile-menu-close">
+        <i class="icon-cancel"></i>
+      </span>
+      <nav class="mobile-nav">
+        <ul class="mobile-menu">
+          <li class="active">
+            <a [routerLink]="'/home/welcome'">Home</a>
+          </li>
+          <li>
+            <a href="#">Sarees</a>
+            <ul>
+              <li>
+                <a href="#">TRADITIONAL SAREES</a>
+              </li>
+              <li>
+                <a href="#">WEDDING SAREES</a>
+              </li>
+              <li>
+                <a href="#">BOLLYWOOD STYLE SAREES</a>
+              </li>
+              <li>
+                <a href="#">BHAGALPURI SILK SAREES</a>
+              </li>
+              <li>
+                <a href="#">DAILY WEAR SAREES</a>
+              </li>
+              <li>
+                <a href="#">LEHENGA SAREES</a>
+              </li>
+              <li>
+                <a href="#">PARTY WEAR SAREES</a>
+              </li>
+              <li>
+                <a href="#">PRINTED SAREES</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Salwar Kameez</a>
+            <ul>
+              <li>
+                <a href="#">ANARKALI SUITS</a>
+              </li>
+              <li>
+                <a href="#">CHURIDAR SUITS</a>
+              </li>
+              <li>
+                <a href="#">COTTON SUITS</a>
+              </li>
+              <li>
+                <a href="#">LEHENGA SUITS</a>
+              </li>
+              <li>
+                <a href="#">PALAZZO SUITS</a>
+              </li>
+              <li>
+                <a href="#">PAKISTANI SUITS</a>
+              </li>
+              <li>
+                <a href="#">PARTY WEAR SUITS</a>
+              </li>
+              <li>
+                <a href="#">PANJABI & PATIALA SUITS</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Kurtis</a>
+            <ul>
+              <li>
+                <a href="#">COTTON KURTIS</a>
+              </li>
+              <li>
+                <a href="#">DESIGNER KURTIS</a>
+              </li>
+              <li>
+                <a href="#">PARTY WEAR KURTIS</a>
+              </li>
+              <li>
+                <a href="#">CASUAL WEAR KURTIS</a>
+              </li>
+              <li>
+                <a href="#">GEORGETTE KURTIS</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Dress Material</a>
+            <ul>
+              <li>
+                <a href="#">PUNJABI DRESS MATERIALS</a>
+              </li>
+              <li>
+                <a href="#">CHURIDAR DRESS MATERIALS</a>
+              </li>
+              <li>
+                <a href="#">COTTON DRESS MATERIALS</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Lehenga choli</a>
+            <ul>
+              <li>
+                <a href="#"> DESIGNER LAHENGA CHOLI</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Girls / Kids Wear</a>
+            <ul>
+              <li>
+                <a href="#"> GOWNS</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Western wear</a>
+            <ul>
+              <li>
+                <a href="#"> TOP AND TUNICS</a>
+              </li>
+              <li>
+                <a href="#"> LEGGINGS</a>
+              </li>
+              <li>
+                <a href="#"> PALAZZO</a>
+              </li>
+              <li>
+                <a href="#"> BLOUSES</a>
+              </li>
+              <li>
+                <a href="#"> PATIALA WITH DUPATTA</a>
+              </li>
+            </ul>
+
+        </ul>
+      </nav>
+      <!-- End .mobile-nav -->
+
+      <div class="social-icons">
+        <a href="#" class="social-icon" target="_blank">
+          <i class="icon-facebook"></i>
+        </a>
+        <a href="#" class="social-icon" target="_blank">
+          <i class="icon-twitter"></i>
+        </a>
+        <a href="#" class="social-icon" target="_blank">
+          <i class="icon-instagram"></i>
+        </a>
+      </div>
+      <!-- End .social-icons -->
+    </div>
+    <!-- End .mobile-menu-wrapper -->
+  </div>
+  <!-- End .mobile-menu-container -->
+
+  <div class="newsletter-popup mfp-hide" id="newsletter-popup-form" style="background-image: url(assets/images/newsletter_popup_bg.jpg)">
+    <div class="newsletter-popup-content">
+      <img src="assets/images/logo-black.png" alt="Logo" class="logo-newsletter">
+      <h2>BE THE FIRST TO KNOW</h2>
+      <p>Subscribe to the Porto eCommerce newsletter to receive timely updates from your favorite products.</p>
+      <form action="#">
+        <div class="input-group">
+          <input type="email" class="form-control" id="newsletter-email" name="newsletter-email" placeholder="Email address" required>
+          <input type="submit" class="btn" value="Go!">
+        </div>
+        <!-- End .from-group -->
+      </form>
+      <div class="newsletter-subscribe">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="1"> Don't show this popup again
+          </label>
+        </div>
+      </div>
+    </div>
+    <!-- End .newsletter-popup-content -->
+  </div>
+  <!-- End .newsletter-popup -->
+
+  <a id="scroll-top" href="#top" title="Top" role="button">
+    <i class="icon-angle-up"></i>
+  </a>
+  <!-- Plugins JS File -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/plugins.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.min.js"></script>
 </body>
+
 </html>

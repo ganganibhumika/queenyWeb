@@ -1,0 +1,411 @@
+<header class="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="header-left header-dropdowns">
+        <div class="header-dropdown">
+          <a href="#">INR</a>
+          <div class="header-menu">
+            <ul>
+              <li>
+                <a href="#">INR</a>
+              </li>
+              <li>
+                <a href="#">EUR</a>
+              </li>
+              <li>
+                <a href="#">USD</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End .header-menu -->
+        </div>
+        <!-- End .header-dropown -->
+
+        <div class="header-dropdown">
+          <a href="#">
+            <img src="assets/images/flags/in.png" alt="India flag">INDIA</a>
+          <div class="header-menu">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="assets/images/flags/in.png" alt="India flag">INDIA</a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/flags/en.png" alt="England flag">ENGLISH</a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="assets/images/flags/fr.png" alt="France flag">FRENCH</a>
+              </li>
+            </ul>
+          </div>
+          <!-- End .header-menu -->
+        </div>
+        <!-- End .header-dropown -->
+
+        <div class="dropdown compare-dropdown">
+          <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <i class="icon-retweet"></i> Compare (2)
+          </a>
+
+          <div class="dropdown-menu">
+            <div class="dropdownmenu-wrapper">
+              <ul class="compare-products">
+                <li class="product">
+                  <a href="#" class="btn-remove" title="Remove Product">
+                    <i class="icon-cancel"></i>
+                  </a>
+                  <h4 class="product-title">
+                    <a href="#">Lady White Top</a>
+                  </h4>
+                </li>
+                <li class="product">
+                  <a href="#" class="btn-remove" title="Remove Product">
+                    <i class="icon-cancel"></i>
+                  </a>
+                  <h4 class="product-title">
+                    <a href="#">Blue Women Shirt</a>
+                  </h4>
+                </li>
+              </ul>
+
+              <div class="compare-actions">
+                <a href="#" class="action-link">Clear All</a>
+                <a href="#" class="btn btn-primary">Compare</a>
+              </div>
+            </div>
+            <!-- End .dropdownmenu-wrapper -->
+          </div>
+          <!-- End .dropdown-menu -->
+        </div>
+        <!-- End .dropdown -->
+      </div>
+      <!-- End .header-left -->
+
+      <div class="header-right">
+        <p class="welcome-msg">welcome Kishan Patel! </p>
+
+        <div class="header-dropdown dropdown-expanded">
+          <a href="#">Links</a>
+          <div class="header-menu">
+            <ul>
+              <li>
+                <a href="#">MY ACCOUNT </a>
+              </li>
+              <li>
+                <a href="#">DAILY DEAL</a>
+              </li>
+              <li>
+                <a href="#">MY WISHLIST </a>
+              </li>
+              <li>
+                <a [routerLink]="'/home/login'" class="link">LOG IN</a>
+              </li>
+              <li>
+                  <a [routerLink]="'/home/registration'" class="link">Register</a>
+                </li>
+            </ul>
+          </div>
+          <!-- End .header-menu -->
+        </div>
+        <!-- End .header-dropown -->
+      </div>
+      <!-- End .header-right -->
+    </div>
+    <!-- End .container -->
+  </div>
+  <!-- End .header-top -->
+
+  <div class="header-middle">
+    <div class="container">
+      <div class="header-left">
+        <a [routerLink]="'/home/welcome'" class="logo">
+          <img src="assets/images/logo.png" alt="Porto Logo">
+        </a>
+      </div>
+      <!-- End .header-left -->
+
+      <div class="header-center">
+        <div class="header-search">
+          <a href="#" class="search-toggle" role="button">
+            <i class="icon-magnifier"></i>
+          </a>
+          <form action="#" method="get">
+            <div class="header-search-wrapper">
+              <input type="search" class="form-control" name="q" id="q" placeholder="Search..." required>
+              <div class="select-custom">
+                <select id="cat" name="cat">
+                  <option value="">All Categories</option>
+                  <option value="4">Fashion</option>
+                  <option value="12">- Women</option>
+                  <option value="13">- Men</option>
+                  <option value="66">- Jewellery</option>
+                  <option value="67">- Kids Fashion</option>
+                  <option value="5">Electronics</option>
+                  <option value="21">- Smart TVs</option>
+                  <option value="22">- Cameras</option>
+                  <option value="63">- Games</option>
+                  <option value="7">Home &amp; Garden</option>
+                  <option value="11">Motors</option>
+                  <option value="31">- Cars and Trucks</option>
+                  <option value="32">- Motorcycles &amp; Powersports</option>
+                  <option value="33">- Parts &amp; Accessories</option>
+                  <option value="34">- Boats</option>
+                  <option value="57">- Auto Tools &amp; Supplies</option>
+                </select>
+              </div>
+              <!-- End .select-custom -->
+              <button class="btn" type="submit">
+                <i class="icon-magnifier"></i>
+              </button>
+            </div>
+            <!-- End .header-search-wrapper -->
+          </form>
+        </div>
+        <!-- End .header-search -->
+      </div>
+      <!-- End .headeer-center -->
+
+      <div class="header-right">
+        <button class="mobile-menu-toggler" type="button">
+          <i class="icon-menu"></i>
+        </button>
+        <div class="header-contact">
+          <span>Call us now</span>
+          <a href="tel:#">
+            <strong>+123 5678 890</strong>
+          </a>
+        </div>
+        <!-- End .header-contact -->
+
+        <div class="dropdown cart-dropdown">
+          <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
+            <span class="cart-count">2</span>
+          </a>
+
+          <div class="dropdown-menu">
+            <div class="dropdownmenu-wrapper">
+              <div class="dropdown-cart-products">
+                <div class="product">
+                  <div class="product-details">
+                    <h4 class="product-title">
+                      <a href="#">Woman Ring</a>
+                    </h4>
+
+                    <span class="cart-product-info">
+                      <span class="cart-product-qty">1</span>
+                      x $99.00
+                    </span>
+                  </div>
+                  <!-- End .product-details -->
+
+                  <figure class="product-image-container">
+                    <a href="#" class="product-image">
+                      <img src="assets/images/products/cart/product-1.jpg" alt="product">
+                    </a>
+                    <a href="#" class="btn-remove" title="Remove Product">
+                      <i class="icon-cancel"></i>
+                    </a>
+                  </figure>
+                </div>
+                <!-- End .product -->
+
+                <div class="product">
+                  <div class="product-details">
+                    <h4 class="product-title">
+                      <a href="#">Woman Necklace</a>
+                    </h4>
+
+                    <span class="cart-product-info">
+                      <span class="cart-product-qty">1</span>
+                      x $35.00
+                    </span>
+                  </div>
+                  <!-- End .product-details -->
+
+                  <figure class="product-image-container">
+                    <a href="#" class="product-image">
+                      <img src="assets/images/products/cart/product-2.jpg" alt="product">
+                    </a>
+                    <a href="#" class="btn-remove" title="Remove Product">
+                      <i class="icon-cancel"></i>
+                    </a>
+                  </figure>
+                </div>
+                <!-- End .product -->
+              </div>
+              <!-- End .cart-product -->
+
+              <div class="dropdown-cart-total">
+                <span>Total</span>
+
+                <span class="cart-total-price">$134.00</span>
+              </div>
+              <!-- End .dropdown-cart-total -->
+
+              <div class="dropdown-cart-action">
+                <a [routerLink]="'/home/product-cart'" class="btn">View Cart</a>
+                <a href="#" class="btn">Checkout</a>
+              </div>
+              <!-- End .dropdown-cart-total -->
+            </div>
+            <!-- End .dropdownmenu-wrapper -->
+          </div>
+          <!-- End .dropdown-menu -->
+        </div>
+        <!-- End .dropdown -->
+      </div>
+      <!-- End .header-right -->
+    </div>
+    <!-- End .container -->
+  </div>
+  <!-- End .header-middle -->
+
+  <div class="header-bottom sticky-header">
+    <div class="container">
+      <nav class="main-nav">
+        <ul class="menu sf-arrows">
+          <li class="active">
+            <a [routerLink]="'/home/welcome'">Home</a>
+          </li>
+          <li>
+            <a href="#" class="sf-with-ul">Sarees</a>
+            <ul>
+              <li>
+                <a href="#">TRADITIONAL SAREES</a>
+              </li>
+              <li>
+                <a href="#">WEDDING SAREES</a>
+              </li>
+              <li>
+                <a href="#">BOLLYWOOD STYLE SAREES</a>
+              </li>
+              <li>
+                <a href="#">BHAGALPURI SILK SAREES</a>
+              </li>
+              <li>
+                <a href="#">DAILY WEAR SAREES</a>
+              </li>
+              <li>
+                <a href="#">LEHENGA SAREES</a>
+              </li>
+              <li>
+                <a href="#">PARTY WEAR SAREES</a>
+              </li>
+              <li>
+                <a href="#">PRINTED SAREES</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="sf-with-ul">Salwar Kameez</a>
+            <ul>
+              <li>
+                <a href="#">ANARKALI SUITS</a>
+              </li>
+              <li>
+                <a href="#">CHURIDAR SUITS</a>
+              </li>
+              <li>
+                <a href="#">COTTON SUITS</a>
+              </li>
+              <li>
+                <a href="#">LEHENGA SUITS</a>
+              </li>
+              <li>
+                <a href="#">PALAZZO SUITS</a>
+              </li>
+              <li>
+                <a href="#">PAKISTANI SUITS</a>
+              </li>
+              <li>
+                <a href="#">PARTY WEAR SUITS</a>
+              </li>
+              <li>
+                <a href="#">PANJABI & PATIALA SUITS</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="sf-with-ul">Kurtis</a>
+            <ul>
+              <li>
+                <a href="#">COTTON KURTIS</a>
+              </li>
+              <li>
+                <a href="#">DESIGNER KURTIS</a>
+              </li>
+              <li>
+                <a href="#">PARTY WEAR KURTIS</a>
+              </li>
+              <li>
+                <a href="#">CASUAL WEAR KURTIS</a>
+              </li>
+              <li>
+                <a href="#">GEORGETTE KURTIS</a>
+              </li>
+            </ul>
+          </li>
+
+
+          <li>
+            <a href="#" class="sf-with-ul">Dress Material</a>
+            <ul>
+              <li>
+                <a href="#">PUNJABI DRESS MATERIALS</a>
+              </li>
+              <li>
+                <a href="#">CHURIDAR DRESS MATERIALS</a>
+              </li>
+              <li>
+                <a href="#">COTTON DRESS MATERIALS</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="sf-with-ul">Lehenga choli</a>
+            <ul>
+              <li>
+                <a href="#"> DESIGNER LAHENGA CHOLI</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="sf-with-ul">Girls / Kids Wear</a>
+            <ul>
+              <li>
+                <a href="#"> GOWNS</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="sf-with-ul">Western wear</a>
+            <ul>
+              <li>
+                <a href="#"> TOP AND TUNICS</a>
+              </li>
+              <li>
+                <a href="#"> LEGGINGS</a>
+              </li>
+              <li>
+                <a href="#"> PALAZZO</a>
+              </li>
+              <li>
+                <a href="#"> BLOUSES</a>
+              </li>
+              <li>
+                <a href="#"> PATIALA WITH DUPATTA</a>
+              </li>
+            </ul>
+          </li>
+          <!-- <li class="float-right"><a href="#">Buy Porto!</a></li>
+                    <li class="float-right"><a href="#">Special Offer!</a></li> -->
+        </ul>
+      </nav>
+    </div>
+    <!-- End .header-bottom -->
+  </div>
+  <!-- End .header-bottom -->
+</header>
+<!-- End .header -->

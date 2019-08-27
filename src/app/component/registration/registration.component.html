@@ -1,0 +1,77 @@
+<div class="page-header page-header-bg" style="background-image: url('assets/images/page-header-bg.jpg');">
+  <div class="container">
+    <h1>
+      <span>Registration</span>
+      OUR ACCOUNT</h1>
+    <a href="#" class="btn btn-dark">Contact</a>
+  </div>
+  <!-- End .container -->
+</div>
+<!-- End .page-header -->
+<nav aria-label="breadcrumb" class="breadcrumb-nav">
+  <div class="container">
+    <ol class="breadcrumb mt-0">
+      <li class="breadcrumb-item">
+        <a [routerLink]="'/home/welcome'">
+          <i class="icon-home"></i>
+        </a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">Registration</li>
+    </ol>
+  </div>
+  <!-- End .container -->
+</nav>
+<section class="authentication">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="heading mb-4">
+          <h2 class="title">Registration</h2>
+          <p>Please enter your details below to register your account.</p>
+        </div>
+        <!-- End .heading -->
+        <form action="#">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group required-field">
+                <label>Name</label>
+                <input type="text" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group required-field">
+                <label>Mobile No.</label>
+                <input type="text" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group required-field">
+                <label>Email</label>
+                <input type="email" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group required-field">
+                <label>Password</label>
+                <input type="password" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group required-field">
+                <label>Confirm Password</label>
+                <input type="password" class="form-control" required>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-footer">
+                <button type="submit" class="btn btn-primary">Register</button>
+              </div>
+            </div>
+          </div>
+          <!-- End .form-footer -->
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- End .container -->
+</section>
