@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'queenyWeb';
+  constructor(){
+    console.log("test git.......");
+  }
 }
